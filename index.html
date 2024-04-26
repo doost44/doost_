@@ -8,23 +8,34 @@
 </head>
 <body>
     <header>
-        <h1 id="welcome-message">Welcome to My Portfolio</h1>
+        <nav>
+            <!-- Place your navigation links here -->
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#awards">Awards</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="branding">
+            <h1>Welcome to My Portfolio</h1>
+        </div>
     </header>
-    <div id="portfolio-section">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Description of project 1. Brief details about what it involves and any important features.</p>
-            <img src="formatted/DDE_UOW_Works4.jpg" alt="Project 1 Screenshot" style="width: 200px; height: auto;">
-            <a href="projects_code/project1.html" target="_blank">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Description of project 2. Insight into the project's scope and its results.</p>
-            <a href="https://example.com/project2" target="_blank">View Project</a>
-        </div>
-        <!-- Add more projects as needed -->
-    </div>
+    <main>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <!-- Projects will be displayed here -->
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Description of project 1. Brief details about what it involves and any important features.</p>
+                <img src="formatted/DDE_UOW_Works4.jpg" alt="Project 1 Screenshot">
+                <a href="projects_code/project1.html">View Project</a>
+            </div>
+            <!-- Repeat the above div for each project -->
+        </section>
+        <!-- Add more sections for about, awards, contact, etc -->
+    </main>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
