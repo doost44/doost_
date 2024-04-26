@@ -118,7 +118,7 @@ footer {
 
 @media screen and (max-width: 1200px) {
     .project {
-        width: 30%; /* Adjust project size for smaller screens */
+        width: 90%; /* Adjust project size for smaller screens */
     }
 }
 
@@ -132,7 +132,7 @@ footer {
     }
     
     .project, #central-project {
-        width: 45%; /* Adjust project size for mobile screens */
+        width: 75%; /* Adjust project size for mobile screens */
     }
     
     #portfolio-section {
