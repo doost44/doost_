@@ -50,7 +50,7 @@ main {
 }
 
 .project {
-    width: 20%; /* Shrink project size */
+    width: 35%; /* Shrink project size */
     margin: 10px;
     background-color: #ECF2DF; /* Light color for project cards */
     color: #594947; /* Text color */
@@ -61,7 +61,7 @@ main {
 }
 
 .project img {
-    width: 30%;
+    width: 65%;
     height: auto;
     display: block;
 }
