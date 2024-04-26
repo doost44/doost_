@@ -39,17 +39,17 @@ main {
 
 #portfolio-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create three columns */
+    grid-template-columns: repeat(4, 1fr); /* Create three columns */
     grid-gap: 10px;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding: 20px;
     background-color: #594947; /* Medium color */
 }
 
 #central-project {
     grid-column: 2 / span 1; /* Place the central project in the second column */
-    grid-row: 1 / span 2; /* Let the central project take up two rows */
+    grid-row: 1 / span 1; /* Let the central project take up two rows */
     /* Additional styling */
 }
 
@@ -110,7 +110,7 @@ footer {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
     }
     #central-project {
-        grid-column: 1 / span 2; /* Central project spans all columns */
+        grid-column: 1 / span 1; /* Central project spans all columns */
         grid-row: 1;
     }
 }
