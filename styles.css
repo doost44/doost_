@@ -42,8 +42,8 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
-    padding: 20px;
+    gap: 5px;
+    padding: 10px;
     background-color: #594947; /* Medium color */
 }
 
@@ -57,9 +57,9 @@ main {
 #other-projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: top;
-    gap: 10px;
-    width: 150%; /* Adjust as needed */
+    justify-content: center;
+    gap: 5px;
+    width: 125%; /* Adjust as needed */
 }
 
 .project {
