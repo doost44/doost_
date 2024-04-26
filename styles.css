@@ -50,9 +50,9 @@ main {
 }
 
 .project {
-    width: 50%; /* Shrink project size */
+    width: 100%; /* Shrink project size */
     margin: 10px;
-    background-color: #ECF2DF; /* Light color for project cards */
+    background-color: #594947; /* Light color for project cards */
     color: #594947; /* Text color */
     border: none;
     text-align: center;
@@ -61,7 +61,7 @@ main {
 }
 
 .project img {
-    width: 65%;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -83,7 +83,7 @@ footer {
     background-color: #262405; /* Dark footer background */
     color: #ECF2DF; /* Light text */
     text-align: center;
-    padding: 10px 0;
+    padding: 50px 0;
     width: 100%;
 }
 
