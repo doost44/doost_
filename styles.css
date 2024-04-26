@@ -49,7 +49,7 @@ main {
 
 #central-project {
     flex: 100%;
-    max-width: 400px; /* or whatever maximum width you want for your central project */
+    max-width: 1000px; /* or whatever maximum width you want for your central project */
     margin: 0 auto; /* Centers the project */
     /* Additional styling here if needed */
 }
@@ -57,9 +57,9 @@ main {
 #other-projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: top;
     gap: 10px;
-    width: 100%; /* Adjust as needed */
+    width: 150%; /* Adjust as needed */
 }
 
 .project {
