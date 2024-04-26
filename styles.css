@@ -1,75 +1,118 @@
-body, h1, h2, h3, a, button {
-    font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif;
-}
-body {
-    font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif; /* Updated font */
-    background-color: #ECF2DF; /* Light green background */
+/* Reset some basic elements */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, a {
     margin: 0;
     padding: 0;
-    color: #080D07; /* Dark green text color */
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif;
+    background-color: #594947; /* Main dark color */
+    color: #ECF2DF; /* Light text */
 }
 
 header {
-    background-color: #594947; /* Dark brown background */
-    color: #ECF2DF; /* Text color for header */
-    padding: 10px 20px;
-    text-align: left;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #080D07; /* Darker background for header */
 }
 
-#portfolio-section {
+nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #8C7570; /* Medium brown background for portfolio section */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ECF2DF; /* Light text */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#branding h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create five columns */
+    grid-gap: 10px;
+    padding: 0 50px; /* Add padding on the sides */
 }
 
 .project {
-    flex: 1 0 18%; /* Sets the basis for each project to fill rows of 5 */
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #ECF2DF; /* Light green background for each project */
-    color: #262405; /* Dark brown text color */
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
+    background-color: #8C7570; /* Medium color for project cards */
+    padding: 15px;
+    border: none; /* Remove borders */
 }
 
 .project img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto 10px; /* Center image horizontally */
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    color: #ECF2DF; /* Light text */
 }
 
 .project a {
-    display: inline-block;
-    background-color: #080D07; /* Dark green background for links */
-    color: #ECF2DF;
+    color: #080D07; /* Dark text */
+    background-color: #ECF2DF; /* Light background */
     padding: 5px 10px;
     text-decoration: none;
-    border-radius: 0; /* Remove rounded edges */
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .project a:hover {
     background-color: #262405;
 }
 
-h1, h2, h3 {
-    margin: 0 0 10px; /* Adjust margins for headings */
-}
-
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    background-color: #262405; /* Dark brown background for section heading */
-    color: #ECF2DF;
-    padding: 10px;
+footer {
+    background-color: #262405; /* Dark footer background */
+    color: #ECF2DF; /* Light text */
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
-h3 {
-    font-size: 18px;
+@media screen and (max-width: 1200px) {
+    /* Responsive grid for smaller screens */
+    #projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Responsive grid for mobile screens */
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
 }
