@@ -1,59 +1,75 @@
+body, h1, h2, h3, a, button {
+    font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif;
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif; /* Updated font */
+    background-color: #ECF2DF; /* Light green background */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    color: #080D07; /* Dark green text color */
 }
 
-#welcome-section, #portfolio-section {
-    text-align: center;
-    background-color: white;
+header {
+    background-color: #594947; /* Dark brown background */
+    color: #ECF2DF; /* Text color for header */
+    padding: 10px 20px;
+    text-align: left;
+}
+
+#portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 80%;
-    max-width: 600px;
+    background-color: #8C7570; /* Medium brown background for portfolio section */
 }
 
 .project {
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-    margin-top: 10px;
+    flex: 1 0 18%; /* Sets the basis for each project to fill rows of 5 */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ECF2DF; /* Light green background for each project */
+    color: #262405; /* Dark brown text color */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center image horizontally */
+}
+
+.project a {
+    display: inline-block;
+    background-color: #080D07; /* Dark green background for links */
+    color: #ECF2DF;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 0; /* Remove rounded edges */
+}
+
+.project a:hover {
+    background-color: #262405;
 }
 
 h1, h2, h3 {
-    color: #333;
+    margin: 0 0 10px; /* Adjust margins for headings */
 }
 
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+h1 {
+    font-size: 24px;
 }
 
-button:hover {
-    background-color: #0056b3;
+h2 {
+    background-color: #262405; /* Dark brown background for section heading */
+    color: #ECF2DF;
+    padding: 10px;
+    width: 100%;
 }
 
-a {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #28a745;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-a:hover {
-    background-color: #1c7430;
+h3 {
+    font-size: 18px;
 }
