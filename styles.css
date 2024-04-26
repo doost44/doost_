@@ -38,24 +38,35 @@ main {
 }
 
 #portfolio-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Create three columns */
-    grid-gap: 10px;
-    justify-content: left;
-    align-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
     padding: 20px;
     background-color: #594947; /* Medium color */
 }
 
 #central-project {
-    grid-column: 2 / span 1; /* Place the central project in the second column */
-    grid-row: 1 / span 1; /* Let the central project take up two rows */
-    /* Additional styling */
+    flex: 100%;
+    max-width: 400px; /* or whatever maximum width you want for your central project */
+    margin: 0 auto; /* Centers the project */
+    /* Additional styling here if needed */
+}
+
+#other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Adjust as needed */
 }
 
 .project {
-    background-color: #8C7570; /* Medium color for project cards */
-    color: #ECF2DF; /* Text color */
+    width: calc(20% - 10px); /* Adjust width for wrapping, subtracting the gap */
+    margin: 10px;
+    background-color: #594947; /* Light color for project cards */
+    color: #594947; /* Text color */
     border: none;
     text-align: center;
     box-sizing: border-box;
@@ -106,12 +117,8 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    #portfolio-section {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-    }
-    #central-project {
-        grid-column: 1 / span 1; /* Central project spans all columns */
-        grid-row: 1;
+    .project {
+        width: 30%; /* Adjust project size for smaller screens */
     }
 }
 
@@ -124,16 +131,11 @@ footer {
         margin: 5px 0;
     }
     
+    .project, #central-project {
+        width: 45%; /* Adjust project size for mobile screens */
+    }
+    
     #portfolio-section {
-        grid-template-columns: 1fr; /* 1 column for small screens */
-        grid-template-rows: auto;
-    }
-    
-    #central-project, .project {
-        grid-column: 1;
-    }
-    
-    #central-project {
-        grid-row: 1;
+        flex-direction: column;
     }
 }
